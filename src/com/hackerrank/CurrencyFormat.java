@@ -10,7 +10,7 @@ public class CurrencyFormat {
     double payment = scanner.nextDouble();
     scanner.close();
 
-    // Write your code below.
+    // Write your code below expecting.
     Locale localeIndia = new Locale("en", "in");
     String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
     String india = NumberFormat.getCurrencyInstance(localeIndia).format(payment);
